@@ -1,0 +1,90 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #222;
+      text-shadow: 1px 1px 2px white;
+    }
+
+    .container {
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .game {
+      height: 60vmin;
+      width: 60vmin;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5vmin;
+      justify-content: center;
+    }
+
+    .box {
+      height: 18vmin;
+      width: 18vmin;
+      border-radius: 1rem;
+      border: none;
+      font-size: 8vmin;
+      font-weight: bold;
+      cursor: pointer;
+      background: #ffffff;
+      color: #222;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    .box:hover {
+      background: #ffeaa7;
+      transform: scale(1.05);
+    }
+
+    #reset, #new-btn {
+      padding: 0.8rem 1.5rem;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      background: #2d3436;
+      color: white;
+      border-radius: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #reset:hover, #new-btn:hover {
+      background: #636e72;
+    }
+
+    #msg {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #2d3436;
+    }
+
+    .msg-container {
+      margin-top: 1rem;
+    }
+
+    .hide {
+      display: none;
+    }
+ 
